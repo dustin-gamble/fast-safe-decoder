@@ -1,0 +1,10 @@
+.DS_Store
+*.swp
+*.swo
+*.tmp
+*.bak
+.idea/
+.vscode/
+build/
+*.hex
+*.elf
