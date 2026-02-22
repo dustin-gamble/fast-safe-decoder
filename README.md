@@ -3,10 +3,12 @@
 Archive and documentation for a Teensy 4.0 + ODrive dial automation sketch.
 
 This repo preserves the handwritten original code and documents how the system works.
+On this branch, it also includes a suggested next-version starter for cleanup/refactor work.
 
-## Archived Version
+## Versions In This Branch
 
 - `SafeTherapy_v0.33.ino`: Archived handwritten version (kept as-is).
+- `SafeTherapy_v0.34_suggested.ino`: Suggested modernization starter.
 
 ## Hardware + Interfaces
 
@@ -121,17 +123,17 @@ These are the main globals in `SafeTherapy_v0.33.ino`, grouped by purpose.
 - `dialhighpoint`, `dialhigh`, `dialhigha`, `diallow`, `diallowa`, `diallow5`, `bestdial`, `dialcompare`, `dialprevious`, `sync`, `sync2`
 - Several of these are legacy helpers or debug-era remnants.
 
-## Suggested Next-Version Plan
+## Why A Suggested v0.34 File Exists
 
-Recommended for a follow-up branch:
+`SafeTherapy_v0.34_suggested.ino` is a cleanup starting point that:
 
-- keep hardware/library assumptions the same
-- convert magic numbers to named constants
-- group logic into small functions
-- add safer serial parsing boundaries
-- make staged flow explicit for easier testing and tuning
+- keeps hardware/library assumptions the same
+- converts magic numbers to named constants
+- groups logic into small functions
+- adds safer serial parsing boundaries
+- makes staged flow explicit for easier testing and tuning
 
-The archived handwritten file should remain unchanged.
+It is intentionally non-destructive: the original handwritten file remains archived unchanged.
 
 ## Suggested Next Improvements
 
